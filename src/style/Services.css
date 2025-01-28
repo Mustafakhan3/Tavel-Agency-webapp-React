@@ -1,0 +1,99 @@
+/* Services Section Styling */
+.margtop {
+    margin-top: 0px;
+}
+
+.services-section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 85%;
+    margin-left: 110px;
+}
+
+/* Individual Service Card */
+.service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #2c3e50;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #8cc63e;
+    /* Green background */
+    color: white;
+    /* White text for the entire card */
+}
+
+/* Service Icon */
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #8cc63e;
+    /* Default green color for icons */
+    transition: color 0.1s ease, background-color 0.1s ease;
+}
+
+.service-card:hover .service-icon {
+    background-color: #8cc63e;
+    /* Icon background turns green */
+    color: white;
+    /* Icon turns white */
+    border-radius: 50%;
+}
+
+/* Service Title */
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    /* Default black for headings */
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-title {
+    color: white;
+    /* Heading turns white on hover */
+}
+
+/* Service Description */
+.service-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #2c3e50;
+    /* Default lighter black */
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-description {
+    color: white;
+    /* Paragraph text turns white on hover */
+}

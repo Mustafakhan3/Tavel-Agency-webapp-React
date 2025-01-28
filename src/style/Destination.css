@@ -1,0 +1,104 @@
+/* Destination Section Styling */
+.popular-destination-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Section Heading Styling */
+.popular-destination-section .heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.popular-destination-section .heading h3 span {
+    font-size: 16px;
+    color: #8cc63e;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popular-destination-section .heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Destinations Grid Styling */
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 3fr ));
+    /* Grid adapts to screen size */
+    gap: 10px;
+    /* Space between grid items */
+    justify-items: center;
+margin-left: 130px;
+    width: 80%;
+    /* Center content within grid cells */
+    margin-top: 40px;
+}
+
+/* Individual Destination Card */
+.destination-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 480px;
+    /* Fixed width for consistency */
+    height: 200px;
+    /* Fixed height for consistency */
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    /* Centers text and content inside card */
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover img {
+    transform:scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+/* Destination Info Overlay */
+.destination-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+    text-align: left;
+}
+
+.destination-info .discount {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.destination-info .label {
+    font-size: 14px;
+    padding:5px 10px;
+    font-weight: bold;
+    color: #8cc63e;
+    background-color: white;
+    text-transform: capitalize;
+}
+
+.destination-info .label{
+    margin-left: 10px;
+}
+/* Hover Effect for Destination Card */
+.destination-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

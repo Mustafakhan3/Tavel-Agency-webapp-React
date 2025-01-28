@@ -1,0 +1,169 @@
+/* Packages Section Styling */
+.packages-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    /* Center align all content */
+}
+
+.packages-section .heading {
+    margin-bottom: 40px;
+}
+
+.packages-section .heading h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8cc63e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.packages-section .heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Packages Grid */
+.packages-grid {
+    display: flex;
+    justify-content: center;
+    /* Center the grid horizontally */
+    align-items: center;
+    /* Center items vertically */
+    gap: 20px;
+    /* Space between cards */
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    margin-top: 20px;
+}
+
+/* Package Card */
+.package-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 340px;
+    height: 510px;
+    /* Set a fixed width for all cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Default state */
+.package-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+    /* Smooth transition for both hover and back */
+}
+
+/* Hover state */
+.package-image:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the image */
+}
+
+/* Package Info */
+.package-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.package-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.package-details span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.package-details i {
+    color: #8cc63e;
+}
+
+.package-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.package-description {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.package-buttons {
+    
+    flex-direction: row;
+}
+
+.package-buttons .btn {
+    padding: 7px 20px !important;
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: -10px;
+    margin-bottom: 30px;
+    
+    
+    transition: background-color 0.3s ease;
+}
+
+.package-buttons .btn-read-more {
+    background-color:#8cc63e;
+    color:#f9f9f9;
+    border: 1px solid #8cc63e;
+}
+
+
+
+.package-buttons .btn-book-now {
+    background-color: #8cc63e;
+    color: #fff;
+}
+
+.package-buttons .btn-book-now:hover {
+    background-color: #74b030;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 20px;
+    /* Adjust spacing between stars */
+    margin-top: 5px;
+    /* Add space above stars */
+}
+
+.stars i {
+    font-size: 30px !important;
+    /* Adjust size of Font Awesome stars */
+}
+.btn-book-now{
+    margin-left: 15px;
+        text-transform: lowercase;
+
+}
+.btn-read-more{
+    text-transform: lowercase;
+}

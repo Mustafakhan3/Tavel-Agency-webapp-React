@@ -1,0 +1,155 @@
+/* Footer Styles */
+footer {
+    background-color: #000;
+    /* Black background */
+    color: white;
+    /* White text */
+    padding: 40px 20px;
+}
+
+footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-left: 20px;
+}
+.icons-alignment i{
+    margin-right: 8px;
+}
+
+.social-icons{
+    display: flex;
+    margin-left: -2px;
+    gap: 10px;
+    margin-top: 25px;
+    
+}
+.social-icons a{
+    border-radius: 42px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+        border: 1px solid white;
+        color: white;
+}
+.social-icons i{
+    font-size: 16px;
+}
+
+.list-items p {
+    color: white !important;
+}
+.list-items a{
+    margin-left: 10px;
+    list-style: none;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 ;
+}
+footer ul li {
+    position: relative;
+    padding-left: 10px;
+    /* Add space for the arrow */
+    margin-bottom: 10px;
+    /* Space between items */
+}
+ footer ul li::before{
+            content: "➤";
+            position: absolute;
+            left: -8px;
+            
+            font-size: 16px;
+            color: #4caf50;
+            /* Matches the text size */
+            /* Aligns with the text baseline */
+        }
+
+
+@media (min-width: 768px) {
+    footer .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Section Titles */
+footer h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Links */
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #4caf50;
+    /* Green hover color */
+}
+
+/* Contact Info */
+footer p {
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+footer .social-icons a {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #4caf50;
+}
+
+/* Gallery */
+footer .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+footer .gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Newsletter */
+footer .newsletter {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border: none;   
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1;
+}
+
+footer .newsletter button {
+    
+        background-color: #45a049;
+        color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .newsletter button:hover {
+background-color: #8cc63e;
+}
