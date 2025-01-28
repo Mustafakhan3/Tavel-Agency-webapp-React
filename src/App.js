@@ -8,14 +8,19 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<Home />} />
-        <Route path="/services" element={<Home />} />
-        <Route path="/Destination" element={<Home />} />
-        <Route path="/Packages" element={<Home />} />
-        <Route path="/Booking" element={<Home />} />
-        <Route path="/Team" element={<Home />} />
-        <Route path="/Footer" element={<Home />} />
+        <Route path={process.env.PUBLIC_URL + "/"} element={<Home/>} />
+        <Route path={process.env.PUBLIC_URL + "/About"} element={<Home/>} />
+        <Route path={process.env.PUBLIC_URL + "/Services"} element={<Home/>} />
+
+                <Route path={process.env.PUBLIC_URL + "/Destination"} element={<Home/>} />
+                <Route path={process.env.PUBLIC_URL + "/Packages"} element={<Home/>} />
+
+                <Route path={process.env.PUBLIC_URL + "/Booking"} element={<Home/>} />
+
+                <Route path={process.env.PUBLIC_URL + "/Team"} element={<Home/>} />
+
+                <Route path={process.env.PUBLIC_URL + "/Footer"} element={<Home/>} />
+
 
 
 
